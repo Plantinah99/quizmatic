@@ -1,6 +1,6 @@
 *Introduction*
 
-The Math Quiz Web App is an interactive online platform designed to challenge and improve your mathematical skills, regardless of age! Our app offers a fun and engaging way to exercise your brain, boost your confidence, and enhance your problem-solving abilities.
+The QuizMatic web app is an interactive online platform designed to challenge and improve your mathematical skills, regardless of age! Our app offers a fun and engaging way to exercise your brain, boost your confidence, and enhance your problem-solving abilities.
 
 *Benefits*
 
@@ -17,13 +17,4 @@ The Math Quiz Web App is an interactive online platform designed to challenge an
 - *Interactive interface*: Engage with a user-friendly interface that provides instant feedback and tracking progress.
 - *Scorekeeping*: Monitor your progress and strive to beat your personal best scores!
 
-*How to Use*
-
-1. Visit our website and start the quiz.
-2. Choose your desired quiz duration (e.g., 5, 10, or 20 minutes).
-3. Answer as many questions as possible within the time limit.
-4. Review your results, track your progress, and try again to beat your score!
-
-*Conclusion*
-
-The Math Quiz Web App is an excellent tool for anyone looking to improve their mathematical skills, challenge themselves, or simply have fun while exercising their brain. Embrace the benefits of mental arithmetic practice and give your mind a workout today!
+The QuizMatic web app is an excellent tool for anyone looking to improve their mathematical skills, challenge themselves, or simply have fun while exercising their brain. Embrace the benefits of mental arithmetic practice and give your mind a workout today!
