@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QuizMatic</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1>Math Quiz App</h1>
+	<p>Test your math skills with our interactive quiz!</p>
+	<button id="start-quiz-btn">Start Quiz</button>
+	<script src="script.js"></script>
+</body>
+</html>
+
+styles.css
+
+body {
+	background-color: #f0f0f0;
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+h1 {
+	color: #00698f;
+}
+
+button {
+	background-color: #00698f;
+	color: #ffffff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #007bff;
+}
+
+script.js
+
+const startQuizBtn = document.getElementById('start-quiz-btn');
+
+startQuizBtn.addEventListener('click', () => {
+	// Code to start the quiz goes here
+	alert('Quiz started!');
+});
+

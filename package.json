@@ -1,0 +1,26 @@
+{
+  "name": "quizmatic",
+  "version": "1.0.0",
+  "description": "quizmatic: test and improve your math skills with this fun and interactive app. features include timed modes, difficulty levels,and user accounts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Plantinah99/QuizMatic.git"
+  },
+  "keywords": [
+    "math",
+    "quiz",
+    "education",
+    "quizmatic",
+    "game"
+  ],
+  "author": "Plantinah Tshukudu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Plantinah99/QuizMatic/issues"
+  },
+  "homepage": "https://github.com/Plantinah99/QuizMatic#readme"
+}
