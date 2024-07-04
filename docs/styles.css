@@ -1,0 +1,45 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+.features {
+	margin: 40px;
+}
+
+.features ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.features li {
+	margin-bottom: 10px;
+}
+
+.call-to-action {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+button {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #444;
+}
