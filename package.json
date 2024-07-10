@@ -4,7 +4,7 @@
   "description": "math app to test and improve your math skills. features like timed sessions to assess your critical thinking skills as well as different difficulty levels",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
