@@ -1,3 +1,13 @@
 [build]
   publish = "."
   command = "# no build command"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/app"
+  to = "/app.html"
+  status = 200

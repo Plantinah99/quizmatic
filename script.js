@@ -18,6 +18,8 @@ const sarcasmResponses = [
     "Welele inganekwane!"
     "ifilm keh le"
     "senga give up kuwena mbhem"
+    "wa zikhipha kimi!"
+    "asiyeke once mbhem'"
 ];
 
 let currentQuestion;
