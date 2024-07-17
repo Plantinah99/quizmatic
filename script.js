@@ -1,28 +1,78 @@
-const questions = [
-    { question: "2 + 2 = ?", options: [3, 4, 5, 6], answer: 4 },
-    { question: "7 - 3 = ?", options: [2, 3, 4, 5], answer: 4 },
-    { question: "3 * 4 = ?", options: [10, 11, 12, 13], answer: 12 },
-    { question: "15 / 3 = ?", options: [3, 4, 5, 6], answer: 5 },
-];
-
+const operations = ['+', '-', '*', '/'];
 const sarcasmResponses = [
     "Oh, come on! Even my grandma's calculator can do better than that!",
     "Are you sure you passed kindergarten math?",
     "I've seen snails solve this faster. Try again, speedy!",
     "Wrong answer. But hey, at least you're consistent!",
     "Nope! Maybe you should ask your pet rock for help?",
+    "come on now, please focus"
+    "please be serious"
+    "you can do better than that"
+    "give it a go once more"
+    "are you a 4th grader?"
+    "Iyohhhh bathong!"
+    "bathong wena?!"
+    "where in the world is that correct?"
+    "O tswa kae re seke raya teng?"
+    "Ao bathong ruri"
+    "Welele inganekwane!"
+    "ifilm keh le"
+    "senga give up kuwena mbhem"
 ];
 
-let currentQuestion = 0;
+let currentQuestion;
+let correctAnswer;
+
+function generateQuestion() {
+    const num1 = Math.floor(Math.random() * 20) + 1;
+    const num2 = Math.floor(Math.random() * 20) + 1;
+    const operation = operations[Math.floor(Math.random() * operations.length)];
+
+    let question, answer;
+
+    switch (operation) {
+        case '+':
+            question = `${num1} + ${num2} = ?`;
+            answer = num1 + num2;
+            break;
+        case '-':
+            question = `${num1} - ${num2} = ?`;
+            answer = num1 - num2;
+            break;
+        case '*':
+            question = `${num1} * ${num2} = ?`;
+            answer = num1 * num2;
+            break;
+        case '/':
+            answer = Math.floor(num1 / num2);
+            question = `${num1 * answer} / ${num1} = ?`;
+            break;
+    }
+
+    return { question, answer };
+}
 
 function displayQuestion() {
-    const question = questions[currentQuestion];
-    document.getElementById("question").textContent = question.question;
+    const questionData = generateQuestion();
+    currentQuestion = questionData.question;
+    correctAnswer = questionData.answer;
+
+    document.getElementById("question").textContent = currentQuestion;
 
     const optionsContainer = document.getElementById("options");
     optionsContainer.innerHTML = "";
 
-    question.options.forEach((option) => {
+    const options = [correctAnswer];
+    while (options.length < 4) {
+        const wrongAnswer = Math.floor(Math.random() * 40) - 10;
+        if (!options.includes(wrongAnswer)) {
+            options.push(wrongAnswer);
+        }
+    }
+
+    options.sort(() => Math.random() - 0.5);
+
+    options.forEach((option) => {
         const button = document.createElement("button");
         button.textContent = option;
         button.addEventListener("click", () => checkAnswer(option));
@@ -31,16 +81,9 @@ function displayQuestion() {
 }
 
 function checkAnswer(selectedAnswer) {
-    const question = questions[currentQuestion];
-    if (selectedAnswer === question.answer) {
+    if (selectedAnswer === correctAnswer) {
         document.getElementById("feedback").textContent = "Correct! Moving to the next question.";
-        currentQuestion++;
-        if (currentQuestion < questions.length) {
-            setTimeout(displayQuestion, 1000);
-        } else {
-            document.getElementById("question").textContent = "Congratulations! You've completed all questions.";
-            document.getElementById("options").innerHTML = "";
-        }
+        setTimeout(displayQuestion, 1000);
     } else {
         const sarcasm = sarcasmResponses[Math.floor(Math.random() * sarcasmResponses.length)];
         document.getElementById("feedback").textContent = sarcasm;
