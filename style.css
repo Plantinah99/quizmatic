@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#sidebar {
+    width: 250px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#answers button {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+}
+
+#score {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#feedback {
+    font-weight: bold;
+    margin-top: 20px;
+}

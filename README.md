@@ -1,15 +1,27 @@
 # Mathemagix
 
-A basic arithmetic math MCQ app with sarcastic feedback.
+Mathemagix is an interactive arithmetic quiz app designed to improve your math skills while having fun!
 
 ## Features
-- Multiple choice questions
-- Sarcastic feedback for incorrect answers
-- Progress only when the correct answer is given
 
-## How to run
+- Interactive quiz with immediate feedback
+- Witty remarks for incorrect answers
+- Progress tracking
+- Mobile-friendly design
+
+## How to Use
+
 1. Clone the repository
-2. Open `index.html` in your browser
+2. Open `index.html` in your web browser
+3. Click "Start Quiz" to begin
+4. Answer the questions and enjoy the witty feedback!
 
-## Deployment
-This app is deployed on Netlify.
+## Contact
+
+- Email: Plantinahtshukudu@gmail.com
+- Twitter: [@Plantinah_t](https://twitter.com/Plantinah_t)
+- GitHub: [Plantinah99](https://github.com/Plantinah99)
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
