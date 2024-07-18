@@ -4,7 +4,6 @@ const quizPage = document.getElementById('quiz-page');
 const questionElement = document.getElementById('question');
 const answersElement = document.getElementById('answers');
 const feedbackElement = document.getElementById('feedback');
-const scoreElement = document.getElementById('score');
 
 let currentQuestion;
 let score = 0;
@@ -34,15 +33,12 @@ function showNextQuestion() {
     });
 
     feedbackElement.textContent = '';
-    feedbackElement.className = ''; // Reset feedback class
-    updateScore();
 }
 
 function checkAnswer(answerIndex) {
     if (answerIndex === currentQuestion.correctAnswer) {
         score++;
-        feedbackElement.textContent = `Correct! You're a math wizard!`;
-        feedbackElement.className = 'correct';
+        feedbackElement.textContent = `Correct! You're a math wizard! Score: ${score}/${questionCount}`;
         setTimeout(showNextQuestion, 1500);
     } else {
         const funnyRemarks = [
@@ -53,3 +49,6 @@ function checkAnswer(answerIndex) {
             "Looks like someone skipped math class to become a comedian!"
         ];
         const randomRemark = funnyRemarks[Math.floor(Math.random() * funnyRemarks.length)];
+        feedbackElement.textContent = `${randomRemark} Try again!`;
+    }
+}
