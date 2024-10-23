@@ -1,0 +1,61 @@
+/* Global Styles */
+
+body {
+  background-color: #f0f0f0; /* Light gray background */
+  font-family: Arial, sans-serif;
+}
+
+/* Mathemagics App Styles */
+
+.app-container {
+  max-width: 400px; /* Centered container */
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff; /* White background */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.app-header {
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.app-form {
+  margin-top: 20px;
+}
+
+.app-form input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Slightly rounded corners */
+}
+
+.app-form button[type="submit"] {
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px; /* Slightly rounded corners */
+  cursor: pointer;
+}
+
+.app-result {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f0f0f0; /* Light gray background */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 5px; /* Slightly rounded corners */
+}
