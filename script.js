@@ -13,4 +13,4 @@ form.addEventListener('submit', async (e) => {
   });
   const result = await response.json();
   resultDiv.innerText = `Result: ${result.result}`;
-});`
+});
