@@ -1,45 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mathemagix</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mathemagics</title>
+  <script src="script.js"></script>
 </head>
 <body>
-    <div id="sidebar">
-        <h2>Contact</h2>
-        <p>Email: Plantinahtshukudu@gmail.com</p>
-        <p>Twitter: <a href="https://twitter.com/Plantinah_t" target="_blank">Plantinah_t</a></p>
-        <p>GitHub: <a href="https://github.com/Plantinah99" target="_blank">Plantinah99</a></p>
-        <h2>About Mathemagix</h2>
-        <p>Mathemagix is an interactive arithmetic quiz app designed to improve your math skills while having fun!</p>
-        <h3>Benefits:</h3>
-        <ul>
-            <li>Improve mental math skills</li>
-            <li>Enjoy witty feedback</li>
-            <li>Track your progress</li>
-            <li>Learn from mistakes</li>
-        </ul>
-    </div>
-    <div id="main-content">
-        <div id="home-page">
-            <h1>Welcome to Mathemagix</h1>
-            <p>Test your arithmetic skills and have fun!</p>
-            <button id="start-quiz">Start Quiz</button>
-        </div>
-        <div id="quiz-page" style="display: none;">
-            <h2 id="question"></h2>
-            <div id="answers"></div>
-            <p id="feedback"></p>
-        </div>
-	<div id="quiz-page" style="display: none;">
-    <h2 id="question"></h2>
-    <div id="answers"></div>
-    <p id="feedback"></p>
-    <p id="score">Score: 0/0</p>
-    </div>
-    <script src="questions.js"></script>
-    <script src="script.js"></script>
+  <h1>Mathemagics</h1>
+  <form id="math-form">
+    <input type="number" id="num1" placeholder="Number 1">
+    <input type="number" id="num2" placeholder="Number 2">
+    <select id="operation">
+      <option value="add">Add</option>
+      <option value="subtract">Subtract</option>
+    </select>
+    <button id="submit-btn">Calculate</button>
+  </form>
+  <div id="result"></div>
 </body>
 </html>
